@@ -19,14 +19,25 @@ public class GetStartedActivity extends AppCompatActivity implements SpinnerAdap
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
-        Spinner spinner = (Spinner) findViewById(R.id.drug_spinner);
-// Create an ArrayAdapter using the string array and a default spinner layout
+        Spinner drugSpinner = (Spinner) findViewById(R.id.drug_spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.drugs_array, android.R.layout.simple_spinner_item);
-// Specify the layout to use when the list of choices appears
+        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-// Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
+        // Apply the adapter to the spinner
+        drugSpinner.setAdapter(adapter);
+
+        Spinner geneSpinner = (Spinner) findViewById(R.id.gene_spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        adapter = ArrayAdapter.createFromResource(this,
+                R.array.gene_array, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        geneSpinner.setAdapter(adapter);
+
+
     }
 
     @Override

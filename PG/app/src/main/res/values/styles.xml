@@ -21,21 +21,6 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
-    <string-array name="drugs_array">
-        <item>Select drug</item>
-        <item>Mercaptopurine</item>
-        <item>6MP</item>
-        <item>Purinethol</item>
-        <item>Purixan</item>
-        <item>6Mercaptopurine</item>
-        <item>Thioguanine</item>
-        <item>6TG</item>
-        <item>6Thioguanine</item>
-        <item>Tabloid</item>
-        <item>Azathioprine</item>
-        <item>Azasan</item>
-        <item>Imuran</item>
 
-    </string-array>
 
 </resources>

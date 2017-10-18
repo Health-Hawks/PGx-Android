@@ -4,4 +4,55 @@
     <string name="know_more">Want to know more?</string>
     <string name="start">Get Started</string>
     <string name="dosing_guidelines">Dosing Guidelines</string>
+    <string name="dosing_guideline_template"><![CDATA[Dosing guidelines for <Gene name> and <Drug name>]]></string>
+    <string name="pick_allele">Pick the alleles:</string>
+
+    <string-array name="drugs_array">
+        <item>Select drug</item>
+        <item>Mercaptopurine</item>
+        <item>6MP</item>
+        <item>Purinethol</item>
+        <item>Purixan</item>
+        <item>6Mercaptopurine</item>
+        <item>Thioguanine</item>
+        <item>6TG</item>
+        <item>6Thioguanine</item>
+        <item>Tabloid</item>
+        <item>Azathioprine</item>
+        <item>Azasan</item>
+        <item>Imuran</item>
+
+    </string-array>
+
+    <string-array name="gene_array">
+        <item>Select gene</item>
+        <item>TPMT (Thiopurine methyltransferase)</item>
+
+    </string-array>
+
+    <string-array name="allele1_array">
+        <item>Select first allele</item>
+        <item>*1</item>
+        <item>*1S</item>
+        <item>*2</item>
+
+    </string-array>
+
+    <string-array name="allele2_array">
+        <item>Select first allele</item>
+        <item>*1</item>
+        <item>*1S</item>
+        <item>*2</item>
+        <item>*3A</item>
+        <item>*3B</item>
+        <item>*3C</item>
+        <item>*4</item>
+
+
+    </string-array>
+
+
+
+
+
 </resources>
