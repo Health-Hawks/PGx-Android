@@ -1,17 +1,22 @@
 package com.timbuchalka.pg;
 
+import android.content.Intent;
 import android.database.DataSetObserver;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.Toast;
 
-public class GetStartedActivity extends AppCompatActivity implements SpinnerAdapter{
+public class GetStartedActivity extends AppCompatActivity implements SpinnerAdapter, AdapterView.OnItemSelectedListener{
     private static final String TAG = "GetStartedActivity";
+
+    private Spinner geneSpinner, drugSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,24 +24,76 @@ public class GetStartedActivity extends AppCompatActivity implements SpinnerAdap
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
-        Spinner drugSpinner = (Spinner) findViewById(R.id.drug_spinner);
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.drugs_array, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
-        drugSpinner.setAdapter(adapter);
+        geneSpinner = (Spinner) findViewById(R.id.gene_spinner);
+        drugSpinner = (Spinner) findViewById(R.id.drug_spinner);
 
-        Spinner geneSpinner = (Spinner) findViewById(R.id.gene_spinner);
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        adapter = ArrayAdapter.createFromResource(this,
+        ArrayAdapter<CharSequence> geneAdapter = ArrayAdapter.createFromResource(this,
                 R.array.gene_array, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
-        geneSpinner.setAdapter(adapter);
+        geneAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        geneSpinner.setAdapter(geneAdapter);
+        geneSpinner.setOnItemSelectedListener(this);
 
+
+        ArrayAdapter<CharSequence> drugAdapter = ArrayAdapter.createFromResource(this,
+                R.array.drugs_array, android.R.layout.simple_spinner_item);
+        drugAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        drugSpinner.setAdapter(drugAdapter);
+        drugSpinner.setOnItemSelectedListener(this);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+        if(!geneSpinner.getSelectedItem().toString().equals("Select gene") && !drugSpinner.getSelectedItem().toString().equals("Select drug") ) {
+            Intent intent = new Intent(GetStartedActivity.this, DosingGuidelines.class);
+            intent.putExtra("drug", drugSpinner.getSelectedItem().toString());
+            intent.putExtra("gene", geneSpinner.getSelectedItem().toString());
+            startActivity(intent);
+
+        }
+
+//        Intent intent = new Intent(GetStartedActivity.this, DosingGuidelines.class);
+//        Bundle bundle = new Bundle();
+//        bundle.putString("drug", drugSpinner.getSelectedItem().toString());
+//        bundle.putString("gene", geneSpinner.getSelectedItem().toString());
+//
+//        intent.putExtras(bundle);
+//        startActivity(intent);
+
+
+
+
+
+
+
+
+//        if(geneSpinner.getItemAtPosition(position).toString() == "TPMT (Thiopurine methyltransferase)" && drugSpinner.getItemAtPosition(position).toString() == "Azasan") {
+//            startActivity(new Intent(GetStartedActivity.this, DosingGuidelines.class));
+//        }
+
+
+
+//        if(parent.getItemAtPosition(position).toString() == "TPMT (Thiopurine methyltransferase)") {
+//            switch(parent.getItemAtPosition(position).toString()) {//parent still refers to TPMT
+//                case "Azasan":
+//                    startActivity(new Intent(this, DosingGuidelines.class));
+//                    Toast.makeText(parent.getContext(),
+//                            "Selecting Item : " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
+//                    break;
+//
+//            }
+//        } else {
+//            switch(parent.getItemAtPosition(position).toString()) {
+//                case "":
+//                    break;
+//            }
+//
+//
+//        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 

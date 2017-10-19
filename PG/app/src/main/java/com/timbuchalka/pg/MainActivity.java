@@ -28,27 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnStart.setOnClickListener(this);
         btnKnow.setOnClickListener(this);
-
-//        View.OnClickListener listener = new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                switch(v.getId()) {
-//                    case btnKnow:
-//                        setContentView(R.layout.know_more);
-//                        break;
-//                    case btnStart:
-//                        setContentView(R.layout.get_started);
-//                        break;
-//
-//                    default:
-//                        Log.d(TAG, "onClick was neither");
-//                }
-//
-//            }
-//        };
-//
-//        start.setOnClickListener(listener);
-//        know.setOnClickListener(listener);
     }
 
     @Override
