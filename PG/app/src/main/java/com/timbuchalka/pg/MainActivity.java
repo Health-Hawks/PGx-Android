@@ -28,6 +28,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnStart.setOnClickListener(this);
         btnKnow.setOnClickListener(this);
+        Button dosageButton = (Button)findViewById(R.id.button);
+        dosageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DosageCalc.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override
