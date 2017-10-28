@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">PG</string>
+    <string name="poor_met">Poor Metabolizer</string>
+    <string name="int_met">Intermediate Metabolizer</string>
+    <string name="normal_met">Normal Metabolizer</string>
     <string name="action_settings">Settings</string>
     <string name="know_more">Want to know more?</string>
     <string name="start">Get Started</string>
     <string name="dosing_guidelines">Dosing Guidelines</string>
     <string name="dosing_guideline_template"><![CDATA[Dosing guidelines for <Gene name> and <Drug name>]]></string>
     <string name="pick_allele">Pick the alleles:</string>
+
 
     <string-array name="drugs_array">
         <item>Select drug</item>
@@ -39,7 +43,7 @@
     </string-array>
 
     <string-array name="allele2_array">
-        <item>Select first allele</item>
+        <item>Select second allele</item>
         <item>*1</item>
         <item>*1S</item>
         <item>*2</item>
@@ -50,9 +54,6 @@
 
 
     </string-array>
-
-
-
 
 
 </resources>

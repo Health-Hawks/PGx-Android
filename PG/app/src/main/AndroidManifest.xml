@@ -35,6 +35,8 @@
         </activity>
         <activity android:name=".DosingGuidelines">
         </activity>
+        <activity android:name=".AlleleActivity">
+        </activity>
     </application>
 
 </manifest>
