@@ -52,44 +52,6 @@ public class GetStartedActivity extends AppCompatActivity implements SpinnerAdap
 
         }
 
-//        Intent intent = new Intent(GetStartedActivity.this, DosingGuidelines.class);
-//        Bundle bundle = new Bundle();
-//        bundle.putString("drug", drugSpinner.getSelectedItem().toString());
-//        bundle.putString("gene", geneSpinner.getSelectedItem().toString());
-//
-//        intent.putExtras(bundle);
-//        startActivity(intent);
-
-
-
-
-
-
-
-
-//        if(geneSpinner.getItemAtPosition(position).toString() == "TPMT (Thiopurine methyltransferase)" && drugSpinner.getItemAtPosition(position).toString() == "Azasan") {
-//            startActivity(new Intent(GetStartedActivity.this, DosingGuidelines.class));
-//        }
-
-
-
-//        if(parent.getItemAtPosition(position).toString() == "TPMT (Thiopurine methyltransferase)") {
-//            switch(parent.getItemAtPosition(position).toString()) {//parent still refers to TPMT
-//                case "Azasan":
-//                    startActivity(new Intent(this, DosingGuidelines.class));
-//                    Toast.makeText(parent.getContext(),
-//                            "Selecting Item : " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
-//                    break;
-//
-//            }
-//        } else {
-//            switch(parent.getItemAtPosition(position).toString()) {
-//                case "":
-//                    break;
-//            }
-//
-//
-//        }
     }
 
     @Override

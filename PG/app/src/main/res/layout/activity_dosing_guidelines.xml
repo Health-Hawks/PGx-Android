@@ -9,14 +9,14 @@
 
     <Spinner
         android:id="@+id/allele_spinner2"
-        android:layout_width="150dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="2dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"/>
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
         android:id="@+id/dosing_guideline_tv"
@@ -53,11 +53,10 @@
 
     <Spinner
         android:id="@+id/allele_spinner1"
-        android:layout_width="150dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="2dp"
-        android:layout_marginTop="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/allele_spinner2"/>

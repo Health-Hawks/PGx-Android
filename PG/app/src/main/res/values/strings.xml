@@ -1,12 +1,191 @@
 <resources>
+
+
+
+
     <string name="app_name">PG</string>
+    <string name="poor_met">Poor Metabolizer</string>
+    <string name="int_met">Intermediate Metabolizer</string>
+    <string name="normal_met">Normal Metabolizer</string>
     <string name="action_settings">Settings</string>
     <string name="know_more">Want to know more?</string>
     <string name="start">Get Started</string>
     <string name="dosing_guidelines">Dosing Guidelines</string>
     <string name="dosing_guideline_template"><![CDATA[Dosing guidelines for <Gene name> and <Drug name>]]></string>
     <string name="pick_allele">Pick the alleles:</string>
+    <string name="title_activity_dosage_calculator">Dosage Calculator</string>
+    <string name="know_more_1">Pharmacogenomics aims to predict how individual genetic variability impacts drug absorption, metabolism, and activity. While one treatment approach may work well for one individual, the same approach may not be effective or may cause adverse drug effects in other patients.</string>
+    <string name="know_more_intro">The field of pharmacogenomics combines both pharmacology and genomics to develop safe and effective medications along with proper dosages that should be customized to variations in one’s genes.</string>
+    <string name="know_more_third">How to use this clinical decision support tool</string>
 
+    <string-array name="DosageSpinner">
+
+        <item>Mg/Kg</item>
+        <item>Mcg/Kg</item>
+        <item>Gm/Kg</item>
+
+    </string-array>
+
+
+    <string-array name="WeightSpinner">
+
+        <item>Kg</item>
+        <item>Lb</item>
+
+    </string-array>
+    <string-array name="MedAmountSpinner">
+
+        <item>Gm</item>
+        <item>Mcg</item>
+        <item>Mg</item>
+
+    </string-array>
+
+    <string-array name="PerVolumeSpinner">
+
+        <item>Ml</item>
+        <item>L</item>
+
+    </string-array>
+
+    <string-array name="DoseSpinner">
+
+        <item>Gm BID</item>
+        <item>Gm Daily</item>
+        <item>Gm QID</item>
+        <item>Gm TID</item>
+        <item>Gm q1 hr</item>
+        <item>Gm q2 hr</item>
+        <item>Gm q4 hr</item>
+        <item>Mcg BID</item>
+        <item>Mcg Daily</item>
+        <item>Mcg QID</item>
+        <item>Mcg TID</item>
+        <item>Mcg q1 hr</item>
+        <item>Mcg q2 hr</item>
+        <item>Mcg q4 hr</item>
+        <item>Mg BID</item>
+        <item>Mg Daily</item>
+        <item>Mg QID</item>
+        <item>Mg TID</item>
+        <item>Mg q1 hr</item>
+        <item>Mg q2 hr</item>
+        <item>Mg q4 hr</item>
+
+
+    </string-array>
+
+    <string-array name="LiquidDoseSpinner">
+
+        <item>Ml BID</item>
+        <item>Ml Daily</item>
+        <item>Ml QID</item>
+        <item>Ml TID</item>
+        <item>Ml q1 hr</item>
+        <item>Ml q2 hr</item>
+        <item>Ml q4 hr</item>
+        <item>L BID</item>
+        <item>L Daily</item>
+        <item>L QID</item>
+        <item>L TID</item>
+        <item>L q1 hr</item>
+        <item>L q2 hr</item>
+        <item>L q4 hr</item>
+
+    </string-array>
+
+    <string-array name="know_more_files">
+        <item>know_more_1</item>
+        <item>know_more_2</item>
+        <item>know_more_3</item>
+        <item>know_more_4</item>
+        <item>know_more_5</item>
+
+    </string-array>
+
+
+<<<<<<< HEAD
+=======
+    <string-array name="DosageSpinner">
+
+        <item>Mg/Kg</item>
+        <item>Mcg/Kg</item>
+        <item>Gm/Kg</item>
+
+    </string-array>
+
+
+    <string-array name="WeightSpinner">
+
+        <item>Kg</item>
+        <item>Lb</item>
+
+    </string-array>
+    <string-array name="MedAmountSpinner">
+
+        <item>Gm</item>
+        <item>Mcg</item>
+        <item>Mg</item>
+
+    </string-array>
+
+    <string-array name="PerVolumeSpinner">
+
+        <item>Ml</item>
+        <item>L</item>
+
+    </string-array>
+
+    <string-array name="DoseSpinner">
+
+        <item>Gm BID</item>
+        <item>Gm Daily</item>
+        <item>Gm QID</item>
+        <item>Gm TID</item>
+        <item>Gm q1 hr</item>
+        <item>Gm q2 hr</item>
+        <item>Gm q4 hr</item>
+        <item>Mcg BID</item>
+        <item>Mcg Daily</item>
+        <item>Mcg QID</item>
+        <item>Mcg TID</item>
+        <item>Mcg q1 hr</item>
+        <item>Mcg q2 hr</item>
+        <item>Mcg q4 hr</item>
+        <item>Mg BID</item>
+        <item>Mg Daily</item>
+        <item>Mg QID</item>
+        <item>Mg TID</item>
+        <item>Mg q1 hr</item>
+        <item>Mg q2 hr</item>
+        <item>Mg q4 hr</item>
+
+
+    </string-array>
+
+    <string-array name="LiquidDoseSpinner">
+
+        <item>Ml BID</item>
+        <item>Ml Daily</item>
+        <item>Ml QID</item>
+        <item>Ml TID</item>
+        <item>Ml q1 hr</item>
+        <item>Ml q2 hr</item>
+        <item>Ml q4 hr</item>
+        <item>L BID</item>
+        <item>L Daily</item>
+        <item>L QID</item>
+        <item>L TID</item>
+        <item>L q1 hr</item>
+        <item>L q2 hr</item>
+        <item>L q4 hr</item>
+
+    </string-array>
+
+
+
+
+>>>>>>> 89383ab77ca71585c3c297f8bcd73fc2f83df06a
     <string-array name="drugs_array">
         <item>Select drug</item>
         <item>Mercaptopurine</item>
@@ -39,7 +218,7 @@
     </string-array>
 
     <string-array name="allele2_array">
-        <item>Select first allele</item>
+        <item>Select second allele</item>
         <item>*1</item>
         <item>*1S</item>
         <item>*2</item>
@@ -52,7 +231,8 @@
     </string-array>
 
 
+<<<<<<< HEAD
 
-
-
+=======
+>>>>>>> b5f8fea68aa2a9534f7cef3f44295a6f6a865725
 </resources>

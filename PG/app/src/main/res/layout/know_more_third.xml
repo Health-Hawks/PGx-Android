@@ -3,23 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/know_more"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="true"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    tools:context="com.timbuchalka.pg.KnowMoreActivity">
+    android:id="@+id/know_more_third">
 
     <TextView
         android:id="@+id/know_more_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:maxWidth="335dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,9 +23,9 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="126dp"
-        android:layout_height="218dp"
+        android:id="@+id/imageView4"
+        android:layout_width="327dp"
+        android:layout_height="425dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -38,6 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/know_more_1"
-        app:srcCompat="@drawable/picture1"/>
+        app:srcCompat="@drawable/boxes"/>
 
 </android.support.constraint.ConstraintLayout>

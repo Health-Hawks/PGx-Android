@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/know_more"
+    android:id="@+id/know_more_first"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
@@ -15,21 +15,21 @@
         android:id="@+id/know_more_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:maxWidth="335dp"
         android:text="TextView"
         android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="126dp"
-        android:layout_height="218dp"
+        android:id="@+id/img_1"
+        android:layout_width="313dp"
+        android:layout_height="296dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -38,6 +38,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/know_more_1"
-        app:srcCompat="@drawable/picture1"/>
-
+        app:srcCompat="@drawable/know_more_1"/>
 </android.support.constraint.ConstraintLayout>
